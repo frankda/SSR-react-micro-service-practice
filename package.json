@@ -1,0 +1,20 @@
+{
+  "name": "ssr-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankda/SSR-react-micro-service-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankda/SSR-react-micro-service-practice/issues"
+  },
+  "homepage": "https://github.com/frankda/SSR-react-micro-service-practice#readme"
+}
