@@ -6,15 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/frankda/SSR-react-micro-service-practice.git"
-  },
+  "repository": "git+https://github.com/frankda/SSR-react-micro-service-practice.git",
   "keywords": [],
-  "author": "",
+  "author": "Frank Da <frank.da@fairfaxmedia.com.au>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/frankda/SSR-react-micro-service-practice/issues"
   },
-  "homepage": "https://github.com/frankda/SSR-react-micro-service-practice#readme"
+  "homepage": "https://github.com/frankda/SSR-react-micro-service-practice#readme",
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.0.2"
+  }
 }
