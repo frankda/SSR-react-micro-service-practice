@@ -1,11 +1,11 @@
-const path = require('path')
+import path from 'path'
 
-module.exports = {
-    entry: './app/src/test.ts',
+export default {
+    entry: path.resolve(process.cwd(), 'app/src/test.ts'),
     module: {
         rules: [
             {
-                test: /\.ts?$/,
+                test: /\.ts[x]?$/,
                 use: 'babel-loader',
                 exclude: /node_modules/,
             },
@@ -16,6 +16,6 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(process.cwd(), 'build')
     },
 }

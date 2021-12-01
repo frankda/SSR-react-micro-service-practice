@@ -1,12 +1,12 @@
-// reference https://webpack.js.org/api/node/
-const webpack = require('webpack')
-const path = require('path')
-const webpackConfig = require('../webpack/webpack.config.default')
+import webpack from 'webpack'
+import webpackConfig from '../webpack/webpack.config.default.js'
 
+// reference https://webpack.js.org/api/node/
 function build(configs) {
     return new Promise((resolve, reject) =>
         webpack(configs).run((err, stats) => {
             if (err) {
+                console.log(stats.toString())
                 return reject(err)
             }
             return resolve()
