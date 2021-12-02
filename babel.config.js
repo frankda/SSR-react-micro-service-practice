@@ -3,6 +3,7 @@ module.exports = (api) => {
         "@babel/preset-typescript",
     ]
 
+    // https://babeljs.io/docs/en/config-files#apicache
     api.cache(true)
 
     return {
