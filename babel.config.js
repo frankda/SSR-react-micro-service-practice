@@ -1,10 +1,10 @@
-module.exports = (api) => {
+export default (api) => {
     const presets = [
         "@babel/preset-typescript",
     ]
 
     // https://babeljs.io/docs/en/config-files#apicache
-    api.cache(true)
+    // api.cache(true)
 
     return {
         presets,
