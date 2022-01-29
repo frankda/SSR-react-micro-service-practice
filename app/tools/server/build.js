@@ -5,7 +5,8 @@ import webpackConfig from '../webpack/webpack.config.default.js'
 function build(configs) {
     return new Promise((resolve, reject) =>
         webpack(configs).run((err, stats) => {
-            if (err) {
+            if (err || stats.hasErrors()) {
+                // handle errors here
                 console.log(stats.toString())
                 return reject(err)
             }
@@ -15,5 +16,3 @@ function build(configs) {
 }
 
 build(webpackConfig)
-
-  
