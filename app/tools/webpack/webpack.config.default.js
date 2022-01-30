@@ -18,6 +18,7 @@ export default {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(process.cwd(), 'build')
+        path: path.resolve(buildPath, 'public/assets'),
+        publicPath: '/assets/'
     },
 }

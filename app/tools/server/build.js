@@ -7,7 +7,7 @@ function build(configs) {
         webpack(configs).run((err, stats) => {
             if (err || stats.hasErrors()) {
                 // handle errors here
-                console.log(stats.toString())
+                console.log(stats)
                 return reject(err)
             }
             return resolve()
